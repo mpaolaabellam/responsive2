@@ -1,0 +1,294 @@
+/* RESET */
+*{
+    margin: 0; /* Elimina todos los márgenes predeterminados de los elementos */
+    padding: 0; /* Elimina todos los rellenos predeterminados de los elementos */
+    font-family: Verdana, Geneva, Tahoma, sans-serif; /* Aplica una fuente global a todo el documento */
+}
+
+header{
+    height: 100px; /* Define la altura del encabezado */
+    background: #4d4d5c; /* Establece un color de fondo gris oscuro */
+    padding: 0 50px; /* Aplica un relleno de 50px a la izquierda y derecha */
+    color: #fff; /* Color de texto blanco */
+    display: flex; /* Utiliza Flexbox para alinear el contenido */
+    justify-content: space-between; /* Espacio entre los elementos flexibles */
+    align-items: center; /* Centra los elementos verticalmente */
+}
+
+.logo{
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    color: #6cc091; /* Color verde para el logo */
+    font-weight: 200; /* Define un grosor de fuente ligero */
+}
+
+.menu a{
+    color: #fff; /* Color de texto blanco para los enlaces */
+    text-transform: uppercase; /* Convierte el texto a mayúsculas */
+    text-decoration: none; /* Elimina el subrayado de los enlaces */
+    padding: 0 10px; /* Aplica un relleno horizontal a cada enlace */
+    transition: 0.4s; /* Define una transición suave para cambios de estilo */
+   }
+
+   .mostrar-menu, .esconder-menu{
+    font-size: 30px; /* Tamaño de fuente grande para los íconos de menú */
+    cursor: pointer; /* Cambia el cursor a una mano cuando se posiciona sobre ellos */
+    display: none; /* Oculta estos elementos por defecto; se mostrarán en responsive */
+    transition: 0.4s; /* Añade una transición suave */
+}
+.mostrar-menu{
+    order: 1; /* Cambia el orden de visualización de este elemento en flex */
+}
+
+.menu a:hover, 
+.mostrar-menu:hover,
+.esconder-menu:hover{
+    color:#6cc091; /* Cambia el color de los elementos al pasar el mouse, a verde */
+}
+
+#check{
+    display: none; /* Oculta el checkbox que se usa para el menú responsive */
+}
+
+#banner{
+    padding: 0 50px; /* Aplica un relleno de 50px en los laterales */
+    background-image: url(../img/ban.jpg); /* Imagen de fondo */
+    height: 45vh; /* Define una altura que ocupa el 45% de la altura de la ventana */
+    background-size: cover; /* Ajusta la imagen de fondo para cubrir toda el área */
+    background-position: center; /* Centra la imagen de fondo */
+}
+
+#banner::before{
+    content: ''; /* Crea un pseudo-elemento vacío */
+    background: rgba(77,77,92,0.6); /* Color de superposición semitransparente */
+    position: absolute; /* Posición absoluta para cubrir el banner */
+    width: 100%; /* Ancho completo */
+    height: 45vh; /* Altura del banner */
+    left: 0; /* Alineado al borde izquierdo */
+}
+
+.contenido-banner h3{
+    font-size: 30px; /* Tamaño de fuente grande */
+    font-weight: 400; /* Grosor medio de la fuente */
+    padding: 10px 0px; /* Relleno vertical */
+}
+
+.contenido-banner h3 span{
+    font-weight: 600; /* Grosor de fuente mayor para el texto en span */
+}
+.contenido-banner{
+    position: relative; /* Posicionamiento relativo para facilitar la superposición */
+    color: #fff; /* Color blanco para el texto */
+    height: 100%; /* Altura completa del banner */
+    display: flex; /* Flexbox para organizar el contenido */
+    flex-direction: column; /* Organiza los elementos verticalmente */
+    justify-content: center; /* Centra el contenido verticalmente */
+}
+
+.boton-empezar{
+    text-decoration: none; /* Sin subrayado */
+    color:#fff; /* Texto blanco */
+    border: 1px solid #6cc091; /* Borde verde */
+    padding: 20px 40px; /* Relleno en los cuatro lados */
+    align-self: baseline; /* Alinea el botón al inicio del contenedor */
+    transition: all 0.4s; /* Transición suave para todos los cambios */
+}
+.boton-empezar:hover{
+    background: #6cc09070; /* Fondo verde semitransparente al pasar el mouse */
+}
+
+#personas{
+    padding: 50px 50px; /* Relleno en los lados */
+    display: flex; /* Flexbox para organizar el contenido */
+    justify-content: center; /* Centra el contenido horizontalmente */
+    text-align: center; /* Centra el texto */
+}
+
+#personas img{
+    border-radius: 100%; /* Imagen en forma de círculo */
+}
+#personas div{
+    padding: 30px 30px; /* Relleno para los elementos internos */
+}
+#personas div h4{
+    color: #4d4d5c; /* Texto en gris oscuro */
+    font-size: 20px; /* Tamaño de fuente moderado */
+    margin: 15px 0px; /* Espaciado superior e inferior */
+}
+
+#personas div p{
+    color: #4d4d5c87; /* Color gris oscuro con opacidad */
+    font-size: 18px; /* Tamaño de fuente moderado */
+}
+
+.boton-saber-mas{
+    display: inline-block; /* Elemento de bloque en línea */
+    text-decoration: none; /* Sin subrayado */
+    color:#6cc091; /* Texto verde */
+    padding: 10px 30px; /* Relleno en los cuatro lados */
+    border: 3px solid #6cc091; /* Borde verde */
+    border-radius: 30px; /* Bordes redondeados */
+    margin-top: 15px; /* Espaciado superior */
+    transition: all 0.4s; /* Transición suave */
+}
+
+.boton-saber-mas:hover{
+    background: #6cc091; /* Fondo verde al pasar el mouse */
+    color: #fff; /* Texto blanco */
+}
+#iconos{
+    padding: 0px 50px; /* Relleno en los laterales */
+    background: rgba(77,77,92,0.6); /* Fondo gris oscuro semitransparente */
+}
+
+#contenido-iconos{
+    padding: 50px 50px 0px 50px; /* Relleno con espacio inferior */
+    display: flex; /* Flexbox para organizar el contenido */
+    justify-content: space-between; /* Espacio entre los elementos */
+    text-align: center; /* Centra el texto */
+}
+
+#contenido-iconos div{
+    flex: 1; /* Flexibilidad para ocupar espacio */
+    margin: 20px 0px; /* Margen vertical */
+    border-right: 2px rgba(255,255,255,0.2); /* Borde derecho semitransparente */
+}
+
+#contenido-iconos div i{
+    color: #6cc091; /* Color verde para los iconos */
+}
+
+#contenido-iconos div h6{
+    color: #fff; /* Texto blanco */
+    font-size: 20px; /* Tamaño de fuente moderado */
+    font-weight: 100; /* Grosor ligero */
+    margin: 10px 0px; /* Margen vertical */
+}
+
+#contenido-iconos div p{
+    color: rgba(255,255,255,0.55); /* Texto blanco semitransparente */
+    font-size: 15px; /* Tamaño de fuente pequeño */
+}
+
+.boton-iconos{
+    text-align: center; /* Centra el contenido */
+    padding-bottom: 50px; /* Relleno inferior */
+} 
+
+#contacto{
+    background: #6cc091; /* Fondo verde */
+    padding: 50px 0px; /* Relleno superior e inferior */
+    color: #fff; /* Texto blanco */
+}
+
+#contacto h4{
+    text-align: center; /* Centra el texto */
+    font-size: 25px; /* Tamaño de fuente moderado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+
+#contacto h4{
+    text-align: center; /* Centra el texto */
+    font-size: 25px; /* Tamaño de fuente moderado */
+    margin-bottom: 20px; /* Espaciado inferior */
+}
+.datos-form{
+    display: flex; /* Flexbox para alinear los elementos */
+}
+.datos-form div{
+    padding: 10px; /* Relleno para cada campo */
+    flex: 1; /* Flexibilidad para ocupar espacio */
+}
+form label{
+    display: block; /* Elemento de bloque */
+    margin-bottom: 10px; /* Espaciado inferior */
+}
+
+form input, form textarea{
+    background: #6cc091; /* Fondo verde */
+    border-radius: 10px; /* Bordes redondeados */
+    border: 2px solid #8dcca9; /* Borde verde claro */
+    padding: 10px 5px; /* Relleno en los lados */
+    color: #fff; /* Texto blanco */
+    outline: none; /* Sin borde de enfoque */
+    width: 100%; /* Ancho completo */
+    resize: none; /* Sin opción de cambiar el tamaño del textarea */
+}
+
+form button{
+    background: #4d4d5c; /* Fondo gris oscuro */
+    border: none; /* Sin borde */
+    padding: 15px 30px; /* Relleno en los lados */
+    border-radius: 10px; /* Bordes redondeados */
+    color: #fff; /* Texto blanco */
+    cursor: pointer; /* Cursor en forma de mano */
+    transition: 0.4s; /* Transición suave */
+}
+
+form button:hover{
+    background: #4d4d5cc9; /* Fondo gris oscuro con opacidad al pasar el mouse */
+}
+/* La regla @media (max-width: 1000px) en CSS se utiliza para aplicar estilos específicos cuando el ancho de la ventana del navegador es igual o inferior a 1000 píxeles. Este tipo de consulta, conocida como media query, permite que el diseño de la página sea responsivo, es decir, que se adapte a diferentes tamaños de pantalla, como tablets o dispositivos móviles.
+(max-width: 1000px): Especifica la condición bajo la cual se aplicarán los estilos dentro de la media query. En este caso, la condición es que el ancho de la ventana (viewport) debe ser menor o igual a 1000 píxeles.
+
+Cuando el ancho de la pantalla es igual o menor a 1000 píxeles:
+
+Se activan los estilos definidos dentro del bloque { ... }.
+Estos estilos anulan o sobrescriben los estilos generales de la página.
+Permite ajustar el diseño de la página para que sea más adecuado para dispositivos con pantallas más pequeñas, mejorando la usabilidad y accesibilidad.
+*/
+@media(max-width:1000px){
+    /*Header*/
+    .mostrar-menu, .esconder-menu{
+        display: block; /* Muestra el icono del menú permite que los usuarios vean y usen los iconos para abrir o cerrar el menú. */
+    }  
+
+.menu{
+    position: fixed; /* Fija el menú en la pantalla */
+    width: 100%; /* El menú ocupa todo el ancho de la pantalla */
+    height: 100vh; /* El menú ocupa toda la altura de la pantalla */
+    background: #4d4d5c; /* Fondo gris oscuro */
+    /*left: 0;*/
+    right: -100%; /* Posiciona el menú fuera de la pantalla hacia la derecha */
+    top: 0; /* Alinea el menú con el borde superior de la pantalla */
+    text-align: center; /* Centra el contenido dentro del menú */
+    padding: 100px, 0px; /* Espaciado alrededor del contenido (corregir coma por espacio si se desea) */
+    z-index: 100; /* Coloca el menú sobre otros elementos */
+    transition: 0.8s; /* Agrega una transición suave al abrir/cerrar el menú */
+}
+
+.menu a{
+    display: block; /* Hace que los enlaces ocupen todo el ancho del menú */
+    padding: 20px;  /* Espaciado alrededor de cada enlace */
+}
+    /* Configuración del icono de cerrar menú */
+.esconder-menu{
+    position: absolute; /* Ubica el icono de cerrar relativo al contenedor del menú */
+    top: 40px; /* Alinea el icono a 40px del borde superior */
+    right: 40px; /* Alinea el icono a 40px del borde derecho */
+}
+/* Cambia la posición del menú cuando el checkbox está marcado */
+#check:checked ~.menu{
+    right: 0;  /* Mueve el menú hacia la pantalla desde la derecha */
+}
+
+/*PERSONAS*/
+#personas{
+    flex-direction: column;  /* Organiza los elementos dentro de personas en una columna */
+}
+
+/*ICONOS*/
+#contenido-iconos{
+    flex-direction: column; /* Organiza los elementos dentro de iconos en una columna */
+}
+
+/*FORMULARIO*/ 
+.datos-form{
+    flex-direction: column; /* Organiza los campos del formulario en una columna */
+}
+
+/*FOOTER*/ 
+footer{
+    flex-direction: column; /* Organiza los elementos dentro del footer en una columna */
+}
+
+}
