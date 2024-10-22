@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <link rel="stylesheet" href="css/estilos.css">
+    <script src="https://kit.fontawesome.com/d68fe8316a.js" crossorigin="anonymous"></script>
+<!--Ese enlace es un script para integrar Font Awesome en tu proyecto, lo que te permite usar una amplia gama de íconos. Para obtenerlo, sigue estos pasos:
+
+Ve a la página oficial de Font Awesome.
+Si no tienes una cuenta, crea una cuenta gratuita y luego inicia sesión.
+Una vez dentro, ve a la sección Kit y crea un nuevo kit (si no tienes uno ya creado).
+Al crear un kit, se te proporcionará un enlace como el que has compartido. Este enlace será único y estará asociado a tu cuenta, con un identificador específico.-->
+    <title>- Hospital -</title>
+</head>
+<body>
+
+    <!-- Encabezado  
+    el encabezado Contiene el logo del hospital y un menú de navegación que se oculta y muestra usando un botón de tipo "checkbox" con el icono de hamburguesa (&#8801) para el menú.
+Al hacer clic en este botón, se muestra el menú con enlaces como "Inicio", "Nosotros" y "Blog".
+Se usa &#215 para crear un icono de "cerrar" que oculta el menú nuevamente.-->
+    <header>
+        <h2 class="logo"> Hospital </h2>
+        <input type="checkbox" id="check">
+        <label for="check" class="mostrar-menu">
+            &#8801 <!-- para que salga el boton del menu-->
+        </label>   
+        <nav class="menu">
+            <a href="#"> Inicio </a>
+            <a href="#"> Nosotros </a>
+            <a href="#"> Blog </a>
+            <label for="check" class="esconder-menu">
+                &#215
+            </label>
+        </nav>
+    </header>
+
+    <!-- Banner 
+    Sección visual principal, con un encabezado que destaca la adaptabilidad del sitio a dispositivos móviles.
+Incluye un botón "Empezar" que podría llevar a otra sección o a la parte principal de la página.
+-->
+    <section id="banner">
+        <div class="contenido-banner">
+            <h3><span> HOSPITAL: </span> 
+            DISEÑO WEB RESPONSIVE <br>
+                MOVILE FRIENDLY
+            </h3>
+            <a href="#" class="boton-empezar"> Empezar </a>
+        </div>
+    </section>   
+
+<!-- Seccion personas 
+    Muestra perfiles o información de personas relacionadas con el hospital, cada uno con una imagen, título, descripción y un botón de "saber más" para detalles adicionales.-->
+    <section id="personas">
+        <div>
+            <img src="../img/t1.jpg">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, porro!</p>
+            <a href="#" class="boton-saber-mas"> saber mas </a>
+        </div>
+        <div>
+            <img src="../img/t6.jpg">
+            <h4>Lorem ipsum dolor sit amet.</h4>
+            <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptatum, porro!</p>
+            <a href="#" class="boton-saber-mas"> saber mas </a>
+        </div>
+    </section>
+
+    <!--Seccion Iconos 
+    Muestra iconos con información sobre las cualidades del hospital, como "Accesible", "Rápido" y "Responsive", cada uno con un icono de Font Awesome y un botón para aprender más. 
+    
+    link para iconos: https://fontawesome.com/search?s=solid&f=classic&o=r -->
+
+    <section id="iconos">
+        <div id="contenido-iconos">
+          
+            <div>
+                <i class="fa-solid fa-truck-fast fa-3x"></i>
+                <h6> Accesible</h6>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+
+            
+            <div>
+                <i class="fa-brands fa-accessible-icon fa-3x"></i>
+                <h6> Rápido</h6>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+
+            <div>
+                <i class="fa-regular fa-mobile fa-3x"></i>
+                <h6> Responsive </h6>
+                <p>Lorem ipsum dolor sit.</p>
+            </div>
+        </div>
+        <div class="boton-iconos">
+           <a href="#" class="boton-saber-mas"> Saber Más</a> 
+        </div>
+    </section>
+
+    <!-- Formulario de Contacto 
+     
+    Incluye campos para el nombre, email y mensaje, permitiendo a los usuarios contactar al hospital.
+El botón "Enviar Mensaje" aquí se muestra como un enlace, pero podría ser un botón de envío (<button type="submit">) para funcionalidad real. -->
+
+    <section id="contacto">
+        <h4> Contacta con nosotros </h4>
+        <form action="#">
+            <div class="datos-form">
+                <div class="nombre">
+                    <label for="nombre"> Nombre </label>
+                    <input type="text" name="nombre" id="nombre" placeholder="Nombre">
+                </div>
+                <div class="email">
+                    <label for="email"> Email </label>
+                    <input type="email" name="email" id="email" placeholder="Email">
+                </div>
+            </div>
+            <div class="mensaje">
+                <label for="mensaje"> Mensaje</label>
+                <textarea name="mensaje" id="mensaje" cols="30" rows="10" placeholder="mensaje"></textarea>
+            </div>
+            <div class="boton-formulario">
+                <a href="#" class="boton-saber-mas">Enviar Mensaje</a>    
+            </div> 
+        </form>
+    </section>
+
+    <!--Un pie de página con derechos de autor.
+Este código HTML está preparado para adaptarse a dispositivos móviles y utiliza varias secciones para proporcionar información de forma estructurada y accesible.-->
+    <footer>
+        <p>&copy; 2758102 Tecnologo en Desarrollo Multimedia y Web 2024 </p>
+
+    </footer>
+</body>
+</html>
